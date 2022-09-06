@@ -4,15 +4,18 @@ body {
     margin-right: auto;
     font-family: "Helvetica", "Lucida Grande", sans-serif;
     color: #3D3D3D;
+
+    font-size:16px;
+    line-height: 1.5;
 }
 
-h1 {
+.titulo {
     padding: 10px;
     background-color: #D3FFCE;
     text-align: center;
 }
 
-h2 {
+.subtitulo {
     border-bottom: 2px solid black;
 }
 
@@ -26,4 +29,62 @@ figure {
 
 figcaption {
     margin-top: 10px;
+}
+
+.matriz-musicdot {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.familia-tupfeln {
+    width: 275px;
+    float: right;
+}
+
+figure img {
+    width: 100%;
+}
+
+.contato__subtitulo {
+    display: inline;
+}
+
+.contato__info {
+    margin: 16px 0 24px;
+    padding-left: 32px;
+}
+
+.contato__info-titulo,
+.contato__info-descricao {
+    display: inline;
+}
+
+.contato__info-descricao {
+    margin-left: 5px;
+}
+
+.contato__secao {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contato__secao--telefone,
+.contato__secao--instagram {
+    padding-left: 3px;
+    text-align: center;
+}
+
+.rodape {
+    padding: 1.75em 0;
+    font-size: 1.1rem;
+}
+
+.rodape__logo {
+    width: 6em;
+}
+
+.rodape__copyright {
+    display: inline;
+    margin-left: 1em;
 }
