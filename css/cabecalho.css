@@ -18,7 +18,7 @@
 }
 
 .cabecalho__menu {
-    background-color: #f8d033;
+    background-color: #f1d04c;
 }
 
 .cabecalho__item-menu {
@@ -28,7 +28,7 @@
 .cabecalho__item-menu:hover {
     background-color: black;
     border-radius: 30px;
-    transition: 800ms;
+    transition: 300ms;
 }
 
 .cabecalho__item-menu a {
@@ -42,25 +42,34 @@
 }
 
 .main__menu {
-    max-width: 20%;
-    width: 20%;
+    background-color: #edee84;
+    width: 30%;
     -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
     box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
     margin: 0 2em 0 2em;
 }
 
 .menu__cores-title {
+    background-color: #f1d04c;
     font-weight: 800;
     text-align: center;
     padding: 0.35em;
+    border-bottom: 0.5px solid rgb(167, 163, 163);
 }
 
-.menu__cores-lista > *{
-    display: block;
-    padding: 0.35em 0.5em 0.5em 0.5em;  
+.item__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+
+    margin-top: 0.5em;
 }
 
-.menu__cores-lista_cor:hover, u:hover{
-    color: #f8d033;
+.item {
+    padding: 0.35em;
+}
+
+.item:hover, u:hover {
+    color: rgb(176, 170, 170);
     transition: 400ms;
 }
