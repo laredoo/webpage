@@ -6,23 +6,61 @@
     letter-spacing: 0.23em;
     
     color: #fff;
-    background-color: #2D5377;
+    background-color: #edee84;
+
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
+    box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
 }
 
 .cabecalho__logo {
-    padding: 1.15em 0;
-    width: 14.5em;
+    padding: 2px 0 2px 0;
+    width: 9em;
 }
 
 .cabecalho__menu {
-    background-color: #272B3A87;
+    background-color: #f8d033;
 }
 
 .cabecalho__item-menu {
     display: inline-block;
 }
 
+.cabecalho__item-menu:hover {
+    background-color: black;
+    border-radius: 30px;
+    transition: 800ms;
+}
+
 .cabecalho__item-menu a {
     display: inline-block;
     padding: 1.86em 1.42em;
+}
+
+.main {
+    padding: 4em 0 4em 0;
+    display: flex;
+}
+
+.main__menu {
+    max-width: 20%;
+    width: 20%;
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
+    box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
+    margin: 0 2em 0 2em;
+}
+
+.menu__cores-title {
+    font-weight: 800;
+    text-align: center;
+    padding: 0.35em;
+}
+
+.menu__cores-lista > *{
+    display: block;
+    padding: 0.35em 0.5em 0.5em 0.5em;  
+}
+
+.menu__cores-lista_cor:hover, u:hover{
+    color: #f8d033;
+    transition: 400ms;
 }
