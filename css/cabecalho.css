@@ -18,7 +18,7 @@
 }
 
 .cabecalho__menu {
-    background-color: #f1d04c;
+    background-color: #ffa81d;
 }
 
 .cabecalho__item-menu {
@@ -50,7 +50,7 @@
 }
 
 .menu__cores-title {
-    background-color: #f1d04c;
+    background-color: #ffa81d;
     font-weight: 800;
     text-align: center;
     padding: 0.35em;
@@ -73,3 +73,19 @@
     color: rgb(176, 170, 170);
     transition: 400ms;
 }
+
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__content-item {
+    padding-left: 0 0 7em 7em;
+}
+
+.itemImg, .itemImg-Title, .itemImg-Price {
+    padding: 0.2em;
+    width: 80%;
+    text-align: center;
+}
+
