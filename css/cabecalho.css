@@ -63,6 +63,9 @@
     text-align: center;
 
     margin-top: 0.5em;
+
+    border-bottom: 0.5px dotted rgb(167, 163, 163);
+    border-radius: 500px;
 }
 
 .item {
