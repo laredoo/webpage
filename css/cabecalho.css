@@ -92,14 +92,3 @@
     text-align: center;
 }
 
-footer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 50px;
-    color: #fff;
-    background-color: #011c39;
-}
