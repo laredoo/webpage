@@ -1,0 +1,95 @@
+.cabecalho {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    
+    color: #fff;
+    background-color: #edee84;
+
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
+    box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
+}
+
+.cabecalho__logo {
+    padding: 2px 0 2px 0;
+    width: 9em;
+}
+
+.cabecalho__menu {
+    background-color: #ffa81d;
+}
+
+.cabecalho__item-menu {
+    display: inline-block;
+}
+
+.cabecalho__item-menu:hover {
+    background-color: black;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.cabecalho__item-menu a {
+    display: inline-block;
+    padding: 1.86em 1.42em;
+}
+
+.main {
+    padding: 4em 0 4em 0;
+    display: flex;
+}
+
+.main__menu {
+    background-color: #edee84;
+    width: 30%;
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
+    box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
+    margin: 0 2em 0 2em;
+}
+
+.menu__cores-title {
+    background-color: #ffa81d;
+    font-weight: 800;
+    text-align: center;
+    padding: 0.35em;
+    border-bottom: 0.5px solid rgb(167, 163, 163);
+}
+
+.item__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+
+    margin-top: 0.5em;
+
+    border-bottom: 0.5px dotted rgba(255,255,255,0.2);
+    border-radius: 500px;
+}
+
+.item {
+    padding: 0.35em;
+    transition: all 0.3s ease;
+}
+
+.item:hover, u:hover {
+    color: rgb(176, 170, 170);
+    padding-left: 20px;
+}
+
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__content-item {
+    padding-left: 0 0 7em 7em;
+}
+
+.itemImg, .itemImg-Title, .itemImg-Price {
+    padding: 0.2em;
+    width: 80%;
+    text-align: center;
+}
+
