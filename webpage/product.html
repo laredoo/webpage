@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=block">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/product_header.css">
+        <link rel="stylesheet" href="css/product_body.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="js/dropdown.js"></script>
+        <title>Candle | Product</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <!-- Conteúdo do header -->         
+            <a href="index.html">
+                <img class="cabecalho__logo" src="img/lucia_atelie.jpg" title="Ir para a página inicial da Musicdot" alt="Musicdot">
+            </a>
+
+            <nav>
+                <ul class="cabecalho__menu">
+                    <li class="cabecalho__item-menu"> <a href="sobre.html#contato">Contato</a></li>
+                    <li class="cabecalho__item-menu"> <a href="#">Entrar</a></li>
+                    <li class="cabecalho__item-menu"> <a href="#">Matricule-se</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main"> 
+            <div class="main_container">
+                <div class="main_photos">
+                    <img class="main_item" src="img/arq1.jpeg"> </img>
+                    <img class="main_item" src="img/ex3.jpg"> </img>
+                    <img class="main_item" src="img/ex1.jpg"> </img>
+                    <img class="main_item" src="img/ex2.jpg"> </img>  
+                </div>
+                <div class="main_valores">
+                    <h4 class="main_tag">Vela</h4>
+                    <h4 class="main_titulo">Kit 50 Velas Rechaud Decoração Casamento Lâmparina</h4>
+                    <div class="main_preco_bloco">
+                        <p class="main_preco">R$999,90</p>
+                        <p class="main_parcelas">ou 10x de 99,9</p>
+                        <div class="main_img_container"><img class="main_preco_img" src="img/arq1.jpeg"></img></div>
+                        <p class="main_tamanho">Tamanho</p>
+                        <div class="dropdown">
+                            <input type="text" class="textBox"
+                                placeholder="Selecione a Quantidade" readonly>
+                            <div class="option">
+                                <div onclick="show('1')">1</div>
+                                <div onclick="show('2')">2</div>
+                                <div onclick="show('3')">3</div>
+                                <div onclick="show('4')">4</div>
+                                <div onclick="show('5')">5</div>
+                            </div>
+                        </div>
+                        <button class="cashout">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var count = 1;
+                let dropdown = document.querySelector('.dropdown');
+                dropdown.onclick = function() {
+                    dropdown.classList.toggle('active');
+                }
+                const check = document.querySelector('.dropdown');
+                check.addEventListener('click', function handle() {
+                    count += 1;
+                    var cashout = document.querySelector('.cashout');
+                    if(count % 2 == 0) {
+                        cashout.style.marginTop = "240px";
+                    }
+                    else {
+                        cashout.style.marginTop = "15px";
+                    }
+                });
+            </script>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </body>     
+</html>

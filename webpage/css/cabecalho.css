@@ -28,7 +28,7 @@
 .cabecalho__item-menu:hover {
     background-color: black;
     border-radius: 30px;
-    transition: all 0.3s ease;
+    transition: 300ms;
 }
 
 .cabecalho__item-menu a {
@@ -64,18 +64,17 @@
 
     margin-top: 0.5em;
 
-    border-bottom: 0.5px dotted rgba(255,255,255,0.2);
+    border-bottom: 0.5px dotted rgb(167, 163, 163);
     border-radius: 500px;
 }
 
 .item {
     padding: 0.35em;
-    transition: all 0.3s ease;
 }
 
 .item:hover, u:hover {
     color: rgb(176, 170, 170);
-    padding-left: 20px;
+    transition: 400ms;
 }
 
 .main__content {

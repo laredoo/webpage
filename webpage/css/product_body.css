@@ -1,0 +1,117 @@
+.main_container {
+    max-width: 1170px;
+	margin:auto;
+    padding: 30px 0 30px;
+    display: flex;
+}
+
+.main_photos {
+    max-width: 585px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+
+}
+
+.main_container img {
+    height: 300px;
+    width: 300px;
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76); 
+    box-shadow: -1px 10px 23px 0px rgba(66,64,55,0.76);
+    
+}
+
+.main_valores {
+    max-width: 585px;
+    margin-left: 55px; 
+}
+
+.main_tag {
+    padding-top: 10px
+    font-size: 15px;
+    position: relative; 
+}
+
+.main_valores .main_tag::before {
+    content: '';
+	position: absolute;
+	left:0;
+	bottom: -7px;
+	background-color: #ffa81d;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.main_titulo {
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 35px;
+    font-weight: 500;
+}
+
+.main_valores .main_preco {
+    padding-top:  15px;
+    margin-left: 35px;
+}
+
+.main_valores .main_parcelas {
+    padding-top:  10px;
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.main_valores .main_preco_bloco .main_img_container {
+    padding-top: 15px;
+    margin-left: 35px;
+}
+
+.main_valores .main_preco_bloco img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+.main_valores .main_tamanho {
+    margin-left: 35px;
+    padding-top: 15px;
+}
+
+.main_valores .main_bloco_tamanho {
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+}
+
+.main_valores .main_bloco_tamanho div {
+    margin-right: 5px;
+}
+
+.main_valores .main_bloco_tamanho .bloco_tamanho_item {
+    border: 1px solid rgba(177, 177, 177, 0.441);
+    text-align: center;
+    vertical-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    font-size: 50px;
+}
+
+.cashout {
+    margin-top: 15px;
+    margin-left: 35px;
+    width: 300px;
+    height: 50px;
+    background-color: #ffa81d;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.34);
+    font-size: 17px;
+    border: none;
+}
+
+.cashout:hover {
+    background-color: #edee84;
+    transition: .3s;
+}
